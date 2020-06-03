@@ -120,8 +120,26 @@ a.phone {
 
 .site-nav .link {
   display: block;
+  position: relative;
+
   padding-top: 32px;
   padding-bottom: 32px;
+}
+
+.site-nav .link.current-index {
+  color: var(--accent-color);
+}
+
+.site-nav .link.current-index::after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 47px;
+  height: 4px;
+
+  background-image: url(../images/1Header/underline-index.svg);
 }
 
 .contacts .item + .item {

@@ -15,8 +15,20 @@ html {
   --accent-color: #2196f3;
 }
 
-.site-nav .link.current {
+.site-nav .link.current-portfolio {
   color: var(--accent-color);
+}
+
+.site-nav .link.current-portfolio::after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 77px;
+  height: 4px;
+
+  background-image: url(../images/1Header/underline-portfolio.svg);
 }
 
 .section {

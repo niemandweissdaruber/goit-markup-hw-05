@@ -8,10 +8,6 @@ html {
   box-sizing: inherit;
 }
 
-.site-nav .link.current {
-  color: var(--accent-color);
-}
-
 /* Hero */
 .hero {
   padding: 200px 0px;
