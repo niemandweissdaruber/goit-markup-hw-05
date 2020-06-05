@@ -305,6 +305,11 @@ html {
   color: var(--accent-color);
 }
 
+.icon-bg-clients:focus {
+  border: 1px solid var(--accent-color);
+  color: var(--accent-color);
+}
+
 .icon-clients {
   fill: currentColor;
 }
