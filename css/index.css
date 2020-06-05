@@ -148,7 +148,7 @@ html {
 
 /* Чем мы занимаемся */
 
-.img-wrap {
+.we-list .img-wrap {
   position: relative;
 }
 
@@ -156,7 +156,7 @@ html {
   position: absolute;
   bottom: 0;
 
-  width: 380px;
+  width: 100%;
   padding-top: 27px;
   padding-bottom: 27px;
   margin-top: 0px;
