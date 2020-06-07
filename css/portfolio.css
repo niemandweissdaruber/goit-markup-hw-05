@@ -51,23 +51,15 @@ html {
   transition: background-color 250ms var(--cubic), color 250ms var(--cubic);
 }
 
-.filter-list .filter:hover {
+.filter-list .filter:hover,
+.filter-list .filter:focus {
   color: var(--white-color);
   background-color: var(--accent-color);
   cursor: pointer;
 
   border-radius: 4px;
-  box-shadow: 1px 2px 3px 0px rgba(138, 138, 138, 1);
-
-  transition: background-color 250ms var(--cubic), color 250ms var(--cubic);
-}
-
-.filter-list .filter:focus {
-  color: var(--white-color);
-  background-color: var(--accent-color);
-
-  border-radius: 4px;
-  box-shadow: 1px 2px 3px 0px rgba(138, 138, 138, 1);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 3px 1px rgba(0, 0, 0, 0.1);
 }
 
 .filter-list .filter {
@@ -170,11 +162,7 @@ p {
   margin-bottom: 30px;
 }
 
-.examples .item:hover {
-  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    0px 1px 1px rgba(0, 0, 0, 0.12);
-}
-
+.examples .item:hover,
 .examples .item:focus {
   box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
     0px 1px 1px rgba(0, 0, 0, 0.12);
@@ -214,13 +202,15 @@ p {
   background-color: rgba(33, 150, 243, 0.9);
 
   transform: translateY(101%);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms var(--cubic);
 }
 
-.examples .item:hover .overlay-text {
+.item:hover .overlay-text,
+.item:focus .overlay-text {
   transform: translateY(0);
 }
 
-.examples .item:hover .examples-text {
+.item:hover .examples-text,
+.item:focus .examples-text {
   opacity: 1;
 }

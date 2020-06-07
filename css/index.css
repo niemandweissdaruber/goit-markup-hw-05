@@ -261,6 +261,8 @@ html {
   color: #afb1b8;
   background-color: #fff;
   border-radius: 50%;
+
+  transition: background-color 250ms var(--cubic), color 250ms var(--cubic);
 }
 
 .icon-bg-team:hover {
@@ -286,8 +288,6 @@ html {
 
 .clients-list .item {
   cursor: pointer;
-
-  /* transform: scale(1); */
 }
 
 .icon-bg-clients {
@@ -301,19 +301,15 @@ html {
   color: #afb1b8;
   border-radius: 4px;
 
-  transition: transform 250ms var(--cubic);
+  transition: transform 250ms var(--cubic), color 250ms var(--cubic), border 250ms var(--cubic);
 }
 
-.icon-bg-clients:hover {
+.icon-bg-clients:hover,
+.icon-bg-clients:focus {
   border: 1px solid var(--accent-color);
   color: var(--accent-color);
 
   transform: scale(1.2);
-}
-
-.icon-bg-clients:focus {
-  border: 1px solid var(--accent-color);
-  color: var(--accent-color);
 }
 
 .icon-clients {
