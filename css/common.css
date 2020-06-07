@@ -13,11 +13,15 @@ html {
   --secondary-text-color: #212121;
   --white-color: #ffffff;
   --accent-color: #2196f3;
+  --cubic: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
+  user-select: none;
   background-color: var(--white-color);
   color: var(--primary-text-color);
+
+  padding-top: 80px;
 
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
@@ -62,6 +66,17 @@ ul {
 a {
   text-decoration: none;
   color: var(--secondary-text-color);
+}
+
+.page-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+  width: 100%;
+  min-height: 80px;
+  background-color: rgba(255, 255, 255, 0.85);
 }
 
 .logo {

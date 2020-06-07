@@ -13,6 +13,7 @@ html {
   --secondary-text-color: #212121;
   --white-color: #ffffff;
   --accent-color: #2196f3;
+  --cubic: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .site-nav .link.current-portfolio {
@@ -44,17 +45,29 @@ html {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
+
+  border: none;
+
+  transition: background-color 250ms var(--cubic), color 250ms var(--cubic);
 }
 
 .filter-list .filter:hover {
   color: var(--white-color);
   background-color: var(--accent-color);
   cursor: pointer;
+
+  border-radius: 4px;
+  box-shadow: 1px 2px 3px 0px rgba(138, 138, 138, 1);
+
+  transition: background-color 250ms var(--cubic), color 250ms var(--cubic);
 }
 
 .filter-list .filter:focus {
   color: var(--white-color);
   background-color: var(--accent-color);
+
+  border-radius: 4px;
+  box-shadow: 1px 2px 3px 0px rgba(138, 138, 138, 1);
 }
 
 .filter-list .filter {

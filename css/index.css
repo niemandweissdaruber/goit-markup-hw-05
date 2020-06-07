@@ -286,6 +286,8 @@ html {
 
 .clients-list .item {
   cursor: pointer;
+
+  /* transform: scale(1); */
 }
 
 .icon-bg-clients {
@@ -298,11 +300,15 @@ html {
   border: 1px solid #afb1b8;
   color: #afb1b8;
   border-radius: 4px;
+
+  transition: transform 250ms var(--cubic);
 }
 
 .icon-bg-clients:hover {
   border: 1px solid var(--accent-color);
   color: var(--accent-color);
+
+  transform: scale(1.2);
 }
 
 .icon-bg-clients:focus {
