@@ -10,13 +10,15 @@ html {
 
 /* Hero */
 .hero {
-  padding: 200px 0px;
+  padding: 0px;
 
   text-align: center;
+
+  background-color: rgb(141, 141, 141);
 }
 
 .hero-title {
-  margin-bottom: 46px;
+  margin-bottom: 30px;
   color: var(--white-color);
 
   font-weight: 900;
@@ -29,6 +31,10 @@ html {
 }
 
 .overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
   height: 600px;
   max-width: 1600px;
 
