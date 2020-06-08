@@ -48,7 +48,8 @@ html {
 
   border: none;
 
-  transition: background-color 250ms var(--cubic), color 250ms var(--cubic);
+  transition: background-color 250ms var(--cubic), color 250ms var(--cubic),
+    box-shadow 250ms var(--cubic);
 }
 
 .filter-list .filter:hover,
@@ -163,8 +164,14 @@ p {
   margin-bottom: 30px;
 }
 
-.examples .item:hover,
-.examples .item:focus {
+.examples .card {
+  display: block;
+
+  transition: box-shadow 250ms var(--cubic);
+}
+
+.examples .card:hover,
+.examples .card:focus {
   box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
     0px 1px 1px rgba(0, 0, 0, 0.12);
 }
